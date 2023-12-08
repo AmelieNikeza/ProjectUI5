@@ -1,0 +1,32 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+    <Dialog id="idCreateDialog">
+        <customHeader>
+            <Toolbar>
+                <ObjectStatus text="{i18n>new}" state="Success" inverted="true" />
+                <Title text="{i18n>newProject}" />
+            </Toolbar>
+        </customHeader>
+        <content>
+            <form:SimpleForm>
+                <form:content>
+                    <Label text="{i18n>projectCode}" required="true" />
+                    <Input id="idCreateProjectCode" maxLength="10" change="onChangeCreateCode"/>
+                    <Label text="{i18n>projectDesc}" />
+                    <Input id="idCreateProjectDesc" />
+                    <Label text="{i18n>projectLead}" />
+                    <Input id="idCreateProjectLead" maxLength="12" />
+                    <Label text="{i18n>projectDuration}" />
+                    <StepInput id="idCreateProjectDuration" min="0" max="1000" step="100"/>
+                    <Label text="{i18n>projectEndDate}" />
+                    <DatePicker id="idCreateProjectEndDate" />
+                </form:content>
+            </form:SimpleForm>
+        </content>
+        <beginButton>
+            <Button press="onPressSave" text="{i18n>save}" type="Accept" />
+        </beginButton>
+        <endButton>
+            <Button press="onPressCancelCreate" text="{i18n>cancel}" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>
