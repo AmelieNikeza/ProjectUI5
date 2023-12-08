@@ -17,6 +17,7 @@ sap.ui.define([
             },
 
             onPressSkills: function (oEvent) {
+                const sWesh = "ed";
                 // Get clicked user path
                 var oBindingContext = oEvent.getSource().getBindingContext("data");
                 // Build parameter for navigation
