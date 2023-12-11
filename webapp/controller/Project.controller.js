@@ -17,7 +17,7 @@ sap.ui.define([
             },
 
             onPressSkills: function (oEvent) {
-                const sTeste = "ed";
+                const sTested = "ed";
                 const sMarche = "";
                 // Get clicked user path
                 var oBindingContext = oEvent.getSource().getBindingContext("data");
