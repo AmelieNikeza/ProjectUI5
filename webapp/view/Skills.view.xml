@@ -1,0 +1,69 @@
+<mvc:View controllerName="training.controller.Skills" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:viz="sap.viz.ui5.controls" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data" xmlns:f="sap.f">
+    <Page id="idPageSkills">
+        <customHeader>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Title text="{i18n>skills}" />
+                <ToolbarSpacer />
+                <f:Avatar initials="{= ${data>FirstName}[0] + ${data>LastName}[0]}" displaySize="XS" class="sapUiTinyMarginEnd" />
+            </Toolbar>
+        </customHeader>
+        <content>
+            <Breadcrumbs currentLocationText="{data>FirstName} {data>LastName}" separatorStyle="GreaterThan">
+                <links>
+                    <Link press="onPressHome" text="{i18n>title}"/>
+                    <Link press="onPressProject" text="{data>/Project}" visible="{= ${data>/Project} ? true : false}"/>
+                </links>
+            </Breadcrumbs>
+            <ObjectHeader id="idHeaderProject" title="{data>FirstName} {data>LastName}">
+                <attributes>
+                    <ObjectAttribute id="idUserID" title="User ID" text="{data>UserID}" />
+                    <ObjectAttribute id="idEmail" press="onPressEmail" text="{data>EmailAddress}" active="true" />
+                </attributes>
+                <statuses>
+                    <ObjectStatus id="idRelease" text="{data>Role}" state="Information" inverted="true" />
+                    <ObjectStatus id="idPhone" text="{data>PhoneNumber}" icon="sap-icon://call" />
+                </statuses>
+            </ObjectHeader>
+            <layout:VerticalLayout id="containerLayout" width="100%">
+                <layout:BlockLayout id="BlockLayout" background="Light">
+                    <layout:BlockLayoutRow>
+                        <layout:BlockLayoutCell>
+                            <f:GridList id="gridList" items="{data>NRanking}">
+                                <f:GridListItem>
+                                    <VBox class="sapUiSmallMargin">
+                                        <layoutData>
+                                            <FlexItemData growFactor="1" shrinkFactor="0" />
+                                            <!-- Don't shrink below minimum size. Fill space if available. -->
+                                        </layoutData>
+                                        <Label text="{data>Topic}" wrapping="true" />
+                                        <RatingIndicator value="{data>Ranking}" maxValue="5" change="onChangeRanking" />
+                                    </VBox>
+                                </f:GridListItem>
+                            </f:GridList>
+                        </layout:BlockLayoutCell>
+                        <layout:BlockLayoutCell width="3">
+                            <viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" height='100%' width="100%" vizType="radar" vizProperties="{title: {visible : false}}">
+                                <viz:dataset>
+                                    <viz.data:FlattenedDataset data="{data>NRanking}">
+                                        <viz.data:dimensions>
+                                            <viz.data:DimensionDefinition name="Topic" value="{data>Topic}" />
+                                        </viz.data:dimensions>
+                                        <viz.data:measures>
+                                            <viz.data:MeasureDefinition name="Ranking" value="{data>Ranking}" />
+                                        </viz.data:measures>
+                                    </viz.data:FlattenedDataset>
+                                </viz:dataset>
+
+                                <viz:feeds>
+                                    <viz.feeds:FeedItem id="valueAxisFeed" uid="valueAxis" type="Measure" values="Ranking" />
+                                    <viz.feeds:FeedItem uid="categoryAxis" type="Dimension" values="Topic" />
+                                </viz:feeds>
+                            </viz:VizFrame>
+                        </layout:BlockLayoutCell>
+                    </layout:BlockLayoutRow>
+                </layout:BlockLayout>
+            </layout:VerticalLayout>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,16 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog id="idFilterDialog" title="{i18n>quickFilter}">
+        <content>
+            <List id="idQuickFilterList" itemPress="onItemPressFilter" mode="SingleSelectMaster">
+                <items>
+                    <StandardListItem title="{i18n>filterAll}" description="{i18n>filterAllDesc}" type="Active"/>
+                    <StandardListItem title="{i18n>filterBig}" description="{i18n>filterBigDesc}" type="Active"/>
+                    <StandardListItem title="{i18n>filterShort}" description="{i18n>filterShortDesc}" type="Active"/>
+                </items>
+            </List>
+        </content>
+        <beginButton>
+            <Button press="onPressCancel" text="{i18n>cancel}" />
+        </beginButton>
+    </Dialog>
+</core:FragmentDefinition>

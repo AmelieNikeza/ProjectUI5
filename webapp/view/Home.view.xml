@@ -1,0 +1,60 @@
+<mvc:View controllerName="training.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="idPageHome" title="{i18n>title}" titleAlignment="Center" floatingFooter="true">
+        <content>
+            <Table id="idTableProject" items="{data>/ETProjectSet}" noDataText="{i18n>noProject}" fixedLayout="false">
+                <headerToolbar>
+                    <Toolbar id="idToolbarTableProject">
+                        <Title id="idTitleProject" text="{i18n>table.title}" />
+                        <ToolbarSpacer id="idToolbarSpacer" />
+                        <SearchField id="idSearchField" search="onSearchProject" width="33%" />
+                        <Button id="idButtonFilter" press="onPressFilter" icon="sap-icon://filter" />
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column id="idColumnCode" width="140px">
+                        <header>
+                            <Label id="idLabelCode" text="{i18n>column.code}" design="Bold" />
+                        </header>
+                    </Column>
+                    <Column id="idColumnDesc">
+                        <header>
+                            <Label id="idLabelDesc" text="{i18n>column.desc}" design="Bold" />
+                        </header>
+                    </Column>
+                    <Column id="idColumnLead">
+                        <header>
+                            <Label id="idLabelLead" text="{i18n>column.lead}" design="Bold" />
+                        </header>
+                    </Column>
+                    <Column id="idColumnDura">
+                        <header>
+                            <Label id="idLabelDura" text="{i18n>column.dura}" design="Bold" />
+                        </header>
+                    </Column>
+                    <Column id="idColumnEndD">
+                        <header>
+                            <Label id="idLabelEndD" text="{i18n>column.endd}" design="Bold" />
+                        </header>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="idItemProject" type="Navigation" press="onPressProject">
+                        <cells>
+                            <MessageStrip id="idTextProjectCode" text="{data>ProjectCode}" class="sapUiSmallMarginEnd"/>
+                            <Text id="idTextProjectDesc" text="{data>ProjectDescription}" />
+                            <Text id="idTextProjectLead" text="{data>ProjectLeader}" />
+                            <ObjectNumber id="idObjectNumberProjectDuration" number="{data>ProjectDuration}" unit="{i18n>unitDay}" />
+                            <Text id="idTextEndDate" text="{path: 'data>EndDate', formatter: '.formatter.getDateForTable'}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+        <footer>
+            <OverflowToolbar>
+                <ToolbarSpacer />
+                <Button press="onPressCreate" type="Accept" text="{i18n>newProject}" />
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>

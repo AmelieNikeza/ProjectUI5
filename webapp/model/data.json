@@ -1,0 +1,375 @@
+{ 
+    "ETProjectSet" : [
+        {
+            "ProjectID" : "0001",
+            "ProjectCode":"PPS",
+            "ProjectDescription":"Practical problem solving",
+            "ProjectLeader" : "NG3E534",
+            "TechnicalResponsible" : "NG69F01",
+            "CurrentRelease" : "V1",
+            "ProjectDuration" : 200,
+            "EndDate" : "2020-02-10",
+            "SAPSystem" : "XEA",
+            "Hyperlink" : "https://www.google.fr",
+            "NTeamMembers" : [
+            	{
+	        		"FirstName" : "Rémi",
+	        		"LastName"  : "PRETRE",
+	        		"Role"      : "Technical leader",
+	        		"UserID"	: "RPRETRE"
+	        	}, {
+	        		"FirstName" : "Pallavi",
+	        		"LastName"  : "GUPTA",
+	        		"Role"      : "Developper",
+	        		"UserID"	: "PGUPTA"
+	        	}, {
+	        		"FirstName" : "Anne",
+	        		"LastName"  : "GALVANETTO",
+	        		"Role"      : "Project leader",
+	        		"UserID"	: "AGALVANETTO"
+	        	}, {
+	        		"FirstName" : "Quentin",
+	        		"LastName"  : "ALEXANKO",
+	        		"Role"      : "Functional leader",
+	        		"UserID"	: "QALEXANKO"
+	        	}
+            ]
+        },
+        {
+            "ProjectID" : "0002",
+            "ProjectCode":"CAPRI",
+            "ProjectDescription":"Corrective actions for production related items",
+            "ProjectLeader" : "NG3E534",
+            "TechnicalResponsible" : "NG69F01",
+            "CurrentRelease" : "V1",
+            "ProjectDuration" : 300,
+            "EndDate" : "2020-01-10",
+            "SAPSystem" : "XAC",
+            "Hyperlink" : "https://www.google.fr",
+            "NTeamMembers" : [
+            	{
+	        		"FirstName" : "Rémi",
+	        		"LastName"  : "PRETRE",
+	        		"Role"      : "Technical leader",
+	        		"UserID"	: "RPRETRE"
+	        	}, {
+	        		"FirstName" : "Pallavi",
+	        		"LastName"  : "GUPTA",
+	        		"Role"      : "Developper",
+	        		"UserID"	: "PGUPTA"
+	        	}, {
+	        		"FirstName" : "Anne",
+	        		"LastName"  : "GALVANETTO",
+	        		"Role"      : "Project leader",
+	        		"UserID"	: "AGALVANETTO"
+	        	}, {
+	        		"FirstName" : "Quentin",
+	        		"LastName"  : "ALEXANKO",
+	        		"Role"      : "Functional leader",
+	        		"UserID"	: "QALEXANKO"
+	        	}
+            ]
+        },
+        {
+            "ProjectID" : "0003",
+            "ProjectCode":"NDT",
+            "ProjectDescription":"Non destructive test",
+            "ProjectLeader" : "NG3E534",
+            "TechnicalResponsible" : "NG69F01",
+            "CurrentRelease" : "V1",
+            "ProjectDuration" : 100,
+            "EndDate" : "2020-02-10",
+            "SAPSystem" : "XHC",
+            "Hyperlink" : "https://www.google.fr",
+            "NTeamMembers" : [
+            	{
+	        		"FirstName" : "Rémi",
+	        		"LastName"  : "PRETRE",
+	        		"Role"      : "Technical leader",
+	        		"UserID"	: "RPRETRE"
+	        	}, {
+	        		"FirstName" : "Pallavi",
+	        		"LastName"  : "GUPTA",
+	        		"Role"      : "Developper",
+	        		"UserID"	: "PGUPTA"
+	        	}, {
+	        		"FirstName" : "Anne",
+	        		"LastName"  : "GALVANETTO",
+	        		"Role"      : "Project leader",
+	        		"UserID"	: "AGALVANETTO"
+	        	}, {
+	        		"FirstName" : "Quentin",
+	        		"LastName"  : "ALEXANKO",
+	        		"Role"      : "Functional leader",
+	        		"UserID"	: "QALEXANKO"
+	        	}
+            ]
+        },
+        {
+            "ProjectID" : "0004",
+            "ProjectCode":"QSR",
+            "ProjectDescription":"Quality survey report",
+            "ProjectLeader" : "NG3E534",
+            "TechnicalResponsible" : "NG69F01",
+            "CurrentRelease" : "V1",
+            "ProjectDuration" : 200,
+            "EndDate" : "2020-02-10",
+            "SAPSystem" : "XEA",
+            "Hyperlink" : "https://www.google.fr",
+            "NTeamMembers" : [
+            	{
+	        		"FirstName" : "Rémi",
+	        		"LastName"  : "PRETRE",
+	        		"Role"      : "Technical leader",
+	        		"UserID"	: "RPRETRE"
+	        	}, {
+	        		"FirstName" : "Pallavi",
+	        		"LastName"  : "GUPTA",
+	        		"Role"      : "Developper",
+	        		"UserID"	: "PGUPTA"
+	        	}, {
+	        		"FirstName" : "Anne",
+	        		"LastName"  : "GALVANETTO",
+	        		"Role"      : "Project leader",
+	        		"UserID"	: "AGALVANETTO"
+	        	}, {
+	        		"FirstName" : "Quentin",
+	        		"LastName"  : "ALEXANKO",
+	        		"Role"      : "Functional leader",
+	        		"UserID"	: "QALEXANKO"
+	        	}
+            ]
+        },
+        {
+            "ProjectID" : "0005",
+            "ProjectCode":"DQN",
+            "ProjectDescription":"Document quality note",
+            "ProjectLeader" : "NG3E534",
+            "TechnicalResponsible" : "NG69F01",
+            "CurrentRelease" : "V1",
+            "ProjectDuration" : 200,
+            "EndDate" : "2020-02-10",
+            "SAPSystem" : "XEA",
+            "Hyperlink" : "https://www.google.fr",
+            "NTeamMembers" : [
+            	{
+	        		"FirstName" : "Rémi",
+	        		"LastName"  : "PRETRE",
+	        		"Role"      : "Technical leader",
+	        		"UserID"	: "RPRETRE"
+	        	}, {
+	        		"FirstName" : "Pallavi",
+	        		"LastName"  : "GUPTA",
+	        		"Role"      : "Developper",
+	        		"UserID"	: "PGUPTA"
+	        	}, {
+	        		"FirstName" : "Anne",
+	        		"LastName"  : "GALVANETTO",
+	        		"Role"      : "Project leader",
+	        		"UserID"	: "AGALVANETTO"
+	        	}, {
+	        		"FirstName" : "Quentin",
+	        		"LastName"  : "ALEXANKO",
+	        		"Role"      : "Functional leader",
+	        		"UserID"	: "QALEXANKO"
+	        	}
+            ]
+        },
+        {
+            "ProjectID" : "0006",
+            "ProjectCode":"NACRT",
+            "ProjectDescription":"Non allocated concession recording tool",
+            "ProjectLeader" : "NG3E534",
+            "TechnicalResponsible" : "NG69F01",
+            "CurrentRelease" : "V1",
+            "ProjectDuration" : 200,
+            "EndDate" : "2020-02-10",
+            "SAPSystem" : "XEA",
+            "Hyperlink" : "https://www.google.fr",
+            "NTeamMembers" : [
+            	{
+	        		"FirstName" : "Rémi",
+	        		"LastName"  : "PRETRE",
+	        		"Role"      : "Technical leader",
+	        		"UserID"	: "RPRETRE"
+	        	}, {
+	        		"FirstName" : "Pallavi",
+	        		"LastName"  : "GUPTA",
+	        		"Role"      : "Developper",
+	        		"UserID"	: "PGUPTA"
+	        	}, {
+	        		"FirstName" : "Anne",
+	        		"LastName"  : "GALVANETTO",
+	        		"Role"      : "Project leader",
+	        		"UserID"	: "AGALVANETTO"
+	        	}, {
+	        		"FirstName" : "Quentin",
+	        		"LastName"  : "ALEXANKO",
+	        		"Role"      : "Functional leader",
+	        		"UserID"	: "QALEXANKO"
+	        	}
+            ]
+        },
+        {
+            "ProjectID" : "0007",
+            "ProjectCode":"UNC",
+            "ProjectDescription":"Unified NC",
+            "ProjectLeader" : "NG3E534",
+            "TechnicalResponsible" : "NG69F01",
+            "CurrentRelease" : "V1",
+            "ProjectDuration" : 200,
+            "EndDate" : "2020-02-10",
+            "SAPSystem" : "XEA",
+            "Hyperlink" : "https://www.google.fr",
+            "NTeamMembers" : [
+            	{
+	        		"FirstName" : "Rémi",
+	        		"LastName"  : "PRETRE",
+	        		"Role"      : "Technical leader",
+	        		"UserID"	: "RPRETRE"
+	        	}, {
+	        		"FirstName" : "Pallavi",
+	        		"LastName"  : "GUPTA",
+	        		"Role"      : "Developper",
+	        		"UserID"	: "PGUPTA"
+	        	}, {
+	        		"FirstName" : "Anne",
+	        		"LastName"  : "GALVANETTO",
+	        		"Role"      : "Project leader",
+	        		"UserID"	: "AGALVANETTO"
+	        	}, {
+	        		"FirstName" : "Quentin",
+	        		"LastName"  : "ALEXANKO",
+	        		"Role"      : "Functional leader",
+	        		"UserID"	: "QALEXANKO"
+	        	}
+            ]
+        }
+    ],
+    "ETUserSet" : {
+    	"RPRETRE": {
+    		"FirstName" : "Rémi",
+    		"LastName"  : "PRETRE",
+    		"Role"      : "Technical leader",
+    		"UserID"	: "RPRETRE",
+    		"Bio" : "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la",
+    		"PhoneNumber" : "05.61.18.74.51",
+    		"EmailAddress" : "remi.pretre@soprasteria.com",
+    		"NRanking" : [
+    			{
+        			"Topic" : "Frontend",
+        			"Ranking" : 5
+    			},
+    			{
+        			"Topic" : "Gateway",
+        			"Ranking" : 5
+    			},
+    			{
+        			"Topic" : "Backend",
+        			"Ranking" : 4
+    			},
+    			{
+        			"Topic" : "Functional",
+        			"Ranking" : 3
+    			},
+    			{
+        			"Topic" : "Project Management",
+        			"Ranking" : 2
+    			}
+    		]
+    	},
+    	"AGALVANETTO": {
+    		"FirstName" : "Anne",
+    		"LastName"  : "GALVANETTO",
+    		"Role"      : "Project leader",
+    		"UserID"	: "AGALVANETTO",
+    		"Bio" : "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la",
+    		"PhoneNumber" : "05.61.18.74.51",
+    		"EmailAddress" : "anne.galvanetto@soprasteria.com",
+    		"NRanking" : [
+    			{
+        			"Topic" : "Frontend",
+        			"Ranking" : 2
+    			},
+    			{
+        			"Topic" : "Gateway",
+        			"Ranking" : 2
+    			},
+    			{
+        			"Topic" : "Backend",
+        			"Ranking" : 2
+    			},
+    			{
+        			"Topic" : "Functional",
+        			"Ranking" : 3
+    			},
+    			{
+        			"Topic" : "Project Management",
+        			"Ranking" : 5
+    			}
+    		]
+    	},
+    	"PGUPTA": {
+    		"FirstName" : "Pallavi",
+    		"LastName"  : "GUPTA",
+    		"Role"      : "Developper",
+    		"UserID"	: "PGUPTA",
+    		"PhoneNumber" : "05.61.18.74.51",
+    		"Bio" : "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la",
+    		"EmailAddress" : "pallavi.gupta@soprasteria.com",
+    		"NRanking" : [
+    			{
+        			"Topic" : "Frontend",
+        			"Ranking" : 5
+    			},
+    			{
+        			"Topic" : "Gateway",
+        			"Ranking" : 5
+    			},
+    			{
+        			"Topic" : "Backend",
+        			"Ranking" : 4
+    			},
+    			{
+        			"Topic" : "Functional",
+        			"Ranking" : 3
+    			},
+    			{
+        			"Topic" : "Project Management",
+        			"Ranking" : 2
+    			}
+    		]
+    	},
+    	"QALEXANKO": {
+    		"FirstName" : "Quentin",
+    		"LastName"  : "ALEXANKO",
+    		"Role"      : "Functional leader",
+    		"UserID"	: "QALEXANKO",
+    		"PhoneNumber" : "05.61.18.74.51",
+    		"Bio" : "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la",
+    		"EmailAddress" : "quentin.alexanko@soprasteria.com",
+    		"NRanking" : [
+    			{
+        			"Topic" : "Frontend",
+        			"Ranking" : 3
+    			},
+    			{
+        			"Topic" : "Gateway",
+        			"Ranking" : 3
+    			},
+    			{
+        			"Topic" : "Backend",
+        			"Ranking" : 3
+    			},
+    			{
+        			"Topic" : "Functional",
+        			"Ranking" : 5
+    			},
+    			{
+        			"Topic" : "Project Management",
+        			"Ranking" : 2
+    			}
+    		]
+    	}
+    }
+}

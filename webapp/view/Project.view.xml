@@ -1,0 +1,51 @@
+<mvc:View xmlns:f="sap.f" controllerName="training.controller.Project" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="idPageProject" title="{data>ProjectCode}" titleAlignment="Center">
+        <content>
+            <Breadcrumbs currentLocationText="{data>ProjectCode}" separatorStyle="GreaterThan">
+                <links>
+                    <Link press="onPressHome" text="{i18n>title}" />
+                </links>
+            </Breadcrumbs>
+            <ObjectHeader id="idHeaderProject" title="{data>ProjectDescription}" number="{data>ProjectDuration}" numberUnit="{i18n>unitDay}">
+                <attributes>
+                    <ObjectAttribute id="idAttributeLead" title="{i18n>project.lead}" text="{data>ProjectLeader}" />
+                    <ObjectAttribute id="idAttributeResp" title="{i18n>project.resp}" text="{data>TechnicalResponsible}" />
+                    <ObjectAttribute id="idLink" press="onPressHyperlink" text="{data>Hyperlink}" active="true" />
+                </attributes>
+                <statuses>
+                    <ObjectStatus id="idRelease" text="{data>CurrentRelease}" title="{i18n>project.curr}" state="Information" inverted="true" />
+                    <ObjectStatus id="idEndDate" text="{data>EndDate}" title="{i18n>project.endd}" state="None" />
+                </statuses>
+            </ObjectHeader>
+
+            <Table id="idTableMembers" items="{data>NTeamMembers}" noDataText="{i18n>noTeam}" fixedLayout="false">
+                <headerToolbar>
+                    <Toolbar>
+                        <Title text="{i18n>teamMembers}" />
+                        <ToolbarSpacer />
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column>
+                        <Label text="{i18n>column.first}" design="Bold" />
+                    </Column>
+                    <Column>
+                        <Label text="{i18n>column.last}" design="Bold" />
+                    </Column>
+                    <Column>
+                        <Label text="{i18n>column.role}" design="Bold" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Navigation" press="onPressSkills">
+                        <cells>
+                            <Text text="{data>FirstName}" />
+                            <Text text="{data>LastName}" />
+                            <Text text="{data>Role}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
