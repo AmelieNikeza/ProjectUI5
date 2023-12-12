@@ -167,11 +167,19 @@ sap.ui.define([
 
                 // Close create dialog
                 this.byId("idCreateDialog").close();
+                sap.m.MessageToast("saved");
             },
 
             onChangeCreateCode: function () {
                 this.byId("idCreateProjectCode").setValueState("None");
                 this.byId("idCreateProjectCode").setValue(this.byId("idCreateProjectCode").getValue().toUpperCase());
+
+            },
+            onTest: function(){
+                const arr = [4, 3, 2, 1];
+                for (let i = 0; i < arr.length; i++) {
+                console.log(arr[i]);
+                }
             }
         });
     });
