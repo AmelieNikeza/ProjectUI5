@@ -1,5 +1,6 @@
 sap.ui.define([
-    "training/controller/BaseController.controller"
+    "training/controller/BaseController.controller",
+    "sap/m/MessageBox"
 ],
     function (BaseController) {
         "use strict";
