@@ -174,6 +174,7 @@ sap.ui.define([
             onChangeCreateCode: function () {
                 this.byId("idCreateProjectCode").setValueState("None");
                 this.byId("idCreateProjectCode").setValue(this.byId("idCreateProjectCode").getValue().toUpperCase());
+                var sTest = "";
 
             },
             onTest: function(){
