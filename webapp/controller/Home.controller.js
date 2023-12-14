@@ -146,6 +146,7 @@ sap.ui.define([
                 var sLeader = this.byId("idCreateProjectLead").getValue();
                 var iDuration = this.byId("idCreateProjectDuration").getValue();
                 var dDateValue = this.byId("idCreateProjectEndDate").getDateValue();
+                var sTest = "";
 
                 // Format in JSON new entry to add in model
                 var oNewProject = {
