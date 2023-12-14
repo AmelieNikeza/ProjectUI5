@@ -1,0 +1,23 @@
+name: Your Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  your-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check SonarQube Server
+      run: |
+        # Replace 'your-sonarqube-server' with the actual hostname or IP address
+        server=http://127.0.0.1:9000
+        
+        # Try to access SonarQube server
+        if curl --output /dev/null --silent --head --fail "http://${server}:9000"; then
+          echo "SonarQube server is reachable."
+        else
+          echo "Unable to reach SonarQube server."
+        fi
