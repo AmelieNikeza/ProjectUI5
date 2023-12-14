@@ -17,7 +17,7 @@ jobs:
         server=localhost
         
         # Try to access SonarQube server
-        if curl --output /dev/null --silent --head --fail "http://${server}:9000"; then
+        if curl --output /dev/null --silent --head --fail "http://${server}:8000"; then
           echo "SonarQube server is reachable."
         else
           echo "Unable to reach SonarQube server."
