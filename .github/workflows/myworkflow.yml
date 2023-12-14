@@ -14,7 +14,7 @@ jobs:
     - name: Check SonarQube Server
       run: |
         # Replace 'your-sonarqube-server' with the actual hostname or IP address
-        server=http://127.0.0.1:9000
+        server=127.0.0.1
         
         # Try to access SonarQube server
         if curl --output /dev/null --silent --head --fail "http://${server}:9000"; then
